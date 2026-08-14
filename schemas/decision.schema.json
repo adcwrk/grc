@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/decision.schema.json",
+  "title": "Decision",
+  "type": "object",
+  "required": ["decision_id", "date", "status", "issue", "decision"],
+  "properties": {
+    "decision_id": { "type": "string" },
+    "date": { "type": "string" },
+    "status": { "type": "string" },
+    "issue": { "type": "string" },
+    "decision": { "type": "string" },
+    "rationale": { "type": "string" },
+    "alternatives_considered": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "affected_artifacts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reviewer": { "type": "string" },
+    "superseded_decision": { "type": "string" }
+  },
+  "additionalProperties": false
+}

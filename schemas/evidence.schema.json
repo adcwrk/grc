@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "allOf": [
+    { "$ref": "artifact.schema.json" },
+    {
+      "type": "object",
+      "required": ["artifact_id", "artifact_type", "client", "status", "sensitivity"],
+      "properties": {
+        "artifact_type": { "const": "evidence" },
+        "source_system": { "type": "string" },
+        "evidence_location": {
+          "type": "object",
+          "required": ["type", "system", "reference"],
+          "properties": {
+            "type": { "enum": ["external", "repository", "local-only"] },
+            "system": { "type": "string" },
+            "reference": { "type": "string" }
+          }
+        }
+      }
+    }
+  ]
+}

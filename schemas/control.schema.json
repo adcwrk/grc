@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/control.schema.json",
+  "title": "Control",
+  "type": "object",
+  "required": ["control_id", "framework", "status"],
+  "properties": {
+    "control_id": { "type": "string" },
+    "framework": { "type": "string" },
+    "requirement": { "type": "string" },
+    "title": { "type": "string" },
+    "status": { "type": "string" },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["framework", "id"],
+        "properties": {
+          "framework": { "type": "string" },
+          "id": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

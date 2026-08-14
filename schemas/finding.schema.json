@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/finding.schema.json",
+  "title": "Finding",
+  "allOf": [
+    { "$ref": "artifact.schema.json" },
+    {
+      "type": "object",
+      "required": ["artifact_id", "artifact_type", "client", "status", "sensitivity"],
+      "properties": {
+        "artifact_type": { "const": "finding" },
+        "risk": { "type": "string" },
+        "evidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "poam": { "type": "string" }
+      }
+    }
+  ]
+}
