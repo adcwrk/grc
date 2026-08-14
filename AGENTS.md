@@ -8,7 +8,8 @@ This file is the canonical instruction source for AI coding agents working in th
 2. Read this file.
 3. Read `README.md`, `docs/architecture.md`, and `docs/operating-model.md`.
 4. For client work, read `clients/<client>/context/handoff.md`, `project-context.md`, `decisions.md`, `assumptions.md`, and `tasks.md`.
-5. Run validation before declaring work complete when tooling changes or GRC artifacts are modified.
+5. For client onboarding requests, read `agents/client-onboarding.md` and use repository scripts for deterministic steps.
+6. Run validation before declaring work complete when tooling changes or GRC artifacts are modified.
 
 ## Ground Rules
 
@@ -23,6 +24,7 @@ This file is the canonical instruction source for AI coding agents working in th
 - Validate generated artifacts before declaring completion.
 - Prefer portable file formats and open interfaces.
 - Do not hard-code the architecture around one LLM vendor or one GRC framework.
+- For onboarding, persist state in `client.yaml`, `engagement.yaml`, `sources/catalog.jsonl`, `onboarding/`, and `logs/activity.jsonl`.
 
 ## Prohibited Behavior
 

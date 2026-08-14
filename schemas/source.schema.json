@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/source.schema.json",
+  "title": "Source Catalog Entry",
+  "type": "object",
+  "required": [
+    "source_id",
+    "filename",
+    "source_type",
+    "original_path",
+    "client",
+    "classification",
+    "ingested_at",
+    "hash",
+    "size_bytes"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{4}$"
+    },
+    "filename": { "type": "string", "minLength": 1 },
+    "source_type": { "type": "string", "minLength": 1 },
+    "original_path": { "type": "string", "minLength": 1 },
+    "client": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,62}[a-z0-9]$"
+    },
+    "engagement": {
+      "type": ["string", "null"]
+    },
+    "classification": {
+      "type": "string",
+      "enum": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "CUI"]
+    },
+    "ingested_at": { "type": "string" },
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": true
+}

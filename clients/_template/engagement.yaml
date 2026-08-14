@@ -1,0 +1,18 @@
+engagement:
+  name: TBD
+  type: TBD
+  status: onboarding
+consultant: null
+frameworks: []
+classification: INTERNAL
+created:
+  date: "{{CREATED_DATE}}"
+stakeholders: []
+objectives: []
+scope: []
+out_of_scope: []
+deliverables: []
+important_dates: []
+known_systems: []
+business_units: []
+data_handling: null

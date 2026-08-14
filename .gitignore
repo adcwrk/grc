@@ -12,6 +12,7 @@ build/
 *.egg-info/
 
 # Local or sensitive evidence staging
+/intake/
 local-evidence/
 private-evidence/
 *.pem

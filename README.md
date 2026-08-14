@@ -29,6 +29,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-dev.txt
 python scripts/bootstrap_client.py acme
+scripts/create-client "Acme Corporation" --engagement-type assessment --framework cmmc
 python scripts/build_manifest.py
 python scripts/validate_repository.py
 pytest
@@ -40,6 +41,7 @@ Useful shortcuts:
 
 ```bash
 make new-client CLIENT=acme
+make onboard CLIENT="Acme Corporation"
 make index
 make validate
 make test
@@ -48,7 +50,7 @@ make handoff CLIENT=acme
 
 ## Repository Workflow
 
-1. Create a client workspace with `python scripts/bootstrap_client.py CLIENT_ID`.
+1. Create a client workspace with `scripts/create-client "Client Name"` for onboarding, or `python scripts/bootstrap_client.py CLIENT_ID` for a bare template.
 2. Fill in `clients/CLIENT_ID/context/project-context.md` before generating policies, assessments, findings, or reports.
 3. Put SOW drafts and scope notes in `clients/CLIENT_ID/sow/`.
 4. Record material decisions in `decisions.md`.
@@ -58,6 +60,7 @@ make handoff CLIENT=acme
 8. Run `python scripts/validate_repository.py` and `python scripts/build_manifest.py` before committing.
 
 Consultant workflow details are in [docs/consultant-howto.md](docs/consultant-howto.md).
+Client onboarding details are in [docs/CLIENT_ONBOARDING.md](docs/CLIENT_ONBOARDING.md).
 
 ## Agent Use
 
@@ -82,6 +85,8 @@ See [docs/security-model.md](docs/security-model.md) and [docs/data-classificati
 
 ```bash
 python scripts/bootstrap_client.py acme
+scripts/create-client "Acme Corporation" --source ./intake/acme
+scripts/validate-workspace acme
 python scripts/build_manifest.py
 python scripts/validate_repository.py
 python scripts/generate_handoff.py acme

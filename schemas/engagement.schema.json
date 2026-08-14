@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/engagement.schema.json",
+  "title": "Engagement Metadata",
+  "type": "object",
+  "required": ["engagement", "frameworks", "classification", "created"],
+  "properties": {
+    "engagement": {
+      "type": "object",
+      "required": ["name", "type", "status"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "status": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "consultant": {
+      "type": ["string", "null"]
+    },
+    "frameworks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "classification": {
+      "type": "string",
+      "enum": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "CUI"]
+    },
+    "created": {
+      "type": "object",
+      "required": ["date"],
+      "properties": {
+        "date": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "stakeholders": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "objectives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "scope": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "out_of_scope": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "deliverables": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "important_dates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "known_systems": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "business_units": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "data_handling": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": true
+}

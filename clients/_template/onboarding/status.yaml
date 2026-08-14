@@ -1,0 +1,8 @@
+onboarding:
+  status: not-started
+  updated_at: "{{CREATED_DATE}}"
+  workspace_initialized: false
+  created_workspace_this_run: false
+  sources_cataloged_this_run: 0
+  sources_skipped_this_run: 0
+  open_question_count: 0

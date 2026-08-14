@@ -8,9 +8,17 @@
 
 Start Codex in the repository root. The agent should read `AGENTS.md`, `README.md`, and the relevant client handoff before making changes.
 
+For client onboarding, the agent should read `agents/client-onboarding.md` and use `scripts/create-client` plus `scripts/validate-workspace`.
+
 ## Claude Code
 
 Use the same repository root. If a Claude-specific instruction file is added later, it should be a thin adapter that says to follow `AGENTS.md`.
+
+For client onboarding, `CLAUDE.md` points back to the canonical onboarding contract.
+
+## Gemini CLI
+
+Use the same repository root. `GEMINI.md` points Gemini-compatible workflows back to `AGENTS.md` and `agents/client-onboarding.md`.
 
 ## GitHub Copilot
 
@@ -36,3 +44,7 @@ Any future agent should be able to continue by reading:
 6. `clients/<client>/context/decisions.md`
 7. `clients/<client>/context/assumptions.md`
 8. `clients/<client>/context/tasks.md`
+9. `clients/<client>/client.yaml`
+10. `clients/<client>/engagement.yaml`
+11. `clients/<client>/onboarding/status.yaml`
+12. `clients/<client>/sources/catalog.jsonl`

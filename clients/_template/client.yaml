@@ -1,0 +1,7 @@
+client:
+  name: "{{CLIENT_ID}}"
+  slug: "{{CLIENT_ID}}"
+  status: active
+classification: INTERNAL
+created:
+  date: "{{CREATED_DATE}}"

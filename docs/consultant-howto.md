@@ -29,12 +29,25 @@ Use a stable lowercase client ID:
 python scripts/bootstrap_client.py acme
 ```
 
+For full onboarding with metadata and source cataloging, prefer:
+
+```bash
+scripts/create-client "Acme Corporation" \
+  --engagement-type assessment \
+  --framework cmmc \
+  --source ./intake/acme
+```
+
 Then complete the initial context files before drafting policies, assessments, findings, or reports:
 
 - `clients/acme/context/project-context.md`
 - `clients/acme/context/assumptions.md`
 - `clients/acme/context/tasks.md`
 - `clients/acme/context/handoff.md`
+- `clients/acme/client.yaml`
+- `clients/acme/engagement.yaml`
+- `clients/acme/sources/catalog.jsonl`
+- `clients/acme/onboarding/open-questions.md`
 - `clients/acme/sow/`
 
 Minimum useful context:
@@ -83,6 +96,7 @@ Before ending a work session:
 ```bash
 python scripts/build_manifest.py
 python scripts/validate_repository.py
+scripts/validate-workspace CLIENT_ID
 git status --short
 ```
 
