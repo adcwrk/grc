@@ -1,5 +1,5 @@
 {
-  "artifact_count": 11,
+  "artifact_count": 13,
   "artifacts": [
     {
       "artifact_id": "CLIENT-{{CLIENT_ID}}-README",
@@ -7,7 +7,7 @@
       "client": "{{CLIENT_ID}}",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.224834+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "clients/_template/README.md",
       "requirement": [],
@@ -23,7 +23,7 @@
       "client": "{{CLIENT_ID}}",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.225837+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "clients/_template/context/assumptions.md",
       "requirement": [],
@@ -39,7 +39,7 @@
       "client": "{{CLIENT_ID}}",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.225431+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "clients/_template/context/decisions.md",
       "requirement": [],
@@ -55,7 +55,7 @@
       "client": "{{CLIENT_ID}}",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.226331+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "clients/_template/context/handoff.md",
       "requirement": [],
@@ -71,7 +71,7 @@
       "client": "{{CLIENT_ID}}",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.225135+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "clients/_template/context/project-context.md",
       "requirement": [],
@@ -87,7 +87,7 @@
       "client": "{{CLIENT_ID}}",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.226088+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "clients/_template/context/tasks.md",
       "requirement": [],
@@ -98,6 +98,22 @@
       ]
     },
     {
+      "artifact_id": "SOW-{{CLIENT_ID}}-README",
+      "artifact_type": "sow-readme",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T04:27:31.508814+00:00",
+      "owner": null,
+      "path": "clients/_template/sow/README.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "sow"
+      ]
+    },
+    {
       "artifact_id": "ASMNT-0001",
       "artifact_type": "assessment",
       "client": "example-client",
@@ -105,7 +121,7 @@
       "framework": [
         "Example Framework"
       ],
-      "modified_time": "2026-08-14T03:33:37.227411+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "templates/assessment/assessment.md",
       "requirement": [
@@ -127,7 +143,7 @@
       "framework": [
         "Example Framework"
       ],
-      "modified_time": "2026-08-14T03:33:37.226603+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": "example-owner",
       "path": "templates/evidence/evidence-record.md",
       "requirement": [
@@ -145,7 +161,7 @@
       "client": "example-client",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.226879+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "templates/policy/policy.md",
       "requirement": [],
@@ -161,7 +177,7 @@
       "client": "example-client",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.227146+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "templates/procedure/procedure.md",
       "requirement": [],
@@ -177,7 +193,7 @@
       "client": "example-client",
       "control": [],
       "framework": [],
-      "modified_time": "2026-08-14T03:33:37.227719+00:00",
+      "modified_time": "2026-08-13T22:03:30-06:00",
       "owner": null,
       "path": "templates/report/report.md",
       "requirement": [],
@@ -186,8 +202,25 @@
       "tags": [
         "report"
       ]
+    },
+    {
+      "artifact_id": "SOW-0001",
+      "artifact_type": "sow",
+      "client": "example-client",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T04:27:31.509292+00:00",
+      "owner": "engagement-lead",
+      "path": "templates/sow/statement-of-work.md",
+      "requirement": [],
+      "sensitivity": "CONFIDENTIAL",
+      "status": "draft",
+      "tags": [
+        "sow",
+        "engagement"
+      ]
     }
   ],
-  "generated_at": "2026-08-14T03:38:34.666191+00:00",
+  "generated_at": "2026-08-14T04:28:08.776801+00:00",
   "manifest_version": "1.0"
 }

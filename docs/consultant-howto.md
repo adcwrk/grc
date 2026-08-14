@@ -35,6 +35,7 @@ Then complete the initial context files before drafting policies, assessments, f
 - `clients/acme/context/assumptions.md`
 - `clients/acme/context/tasks.md`
 - `clients/acme/context/handoff.md`
+- `clients/acme/sow/`
 
 Minimum useful context:
 
@@ -73,6 +74,7 @@ During work:
 - Record uncertain items in `assumptions.md`.
 - Record material decisions in `decisions.md`.
 - Record follow-up work in `tasks.md`.
+- Keep SOW drafts and scope notes in `clients/CLIENT_ID/sow/`.
 - Use evidence metadata records instead of pasting sensitive evidence into Git by default.
 - Update `handoff.md` after substantial work.
 
@@ -149,6 +151,24 @@ Good evidence metadata should answer:
 - Where is the source artifact stored?
 - What is the sensitivity?
 - What are the limitations?
+
+## SOW Handling
+
+Use `clients/CLIENT_ID/sow/` for statements of work, change orders, and engagement scope notes.
+
+Use `templates/sow/statement-of-work.md` as the starting point for a new SOW. SOW artifacts should define:
+
+- engagement objectives
+- in-scope and out-of-scope work
+- applicable frameworks
+- deliverables and acceptance criteria
+- client responsibilities
+- consultant responsibilities
+- assumptions and dependencies
+- evidence handling expectations
+- timeline and change control
+
+Treat SOW content as at least `CONFIDENTIAL` unless approved otherwise. Do not commit signed agreements, pricing, or sensitive contractual terms unless the repository is approved for that data.
 
 ## Decisions And Assumptions
 

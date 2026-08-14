@@ -50,11 +50,12 @@ make handoff CLIENT=acme
 
 1. Create a client workspace with `python scripts/bootstrap_client.py CLIENT_ID`.
 2. Fill in `clients/CLIENT_ID/context/project-context.md` before generating policies, assessments, findings, or reports.
-3. Record material decisions in `decisions.md`.
-4. Track assumptions explicitly in `assumptions.md`.
-5. Keep `tasks.md` and `handoff.md` current after substantial work.
-6. Use YAML front matter on retrievable Markdown artifacts.
-7. Run `python scripts/validate_repository.py` and `python scripts/build_manifest.py` before committing.
+3. Put SOW drafts and scope notes in `clients/CLIENT_ID/sow/`.
+4. Record material decisions in `decisions.md`.
+5. Track assumptions explicitly in `assumptions.md`.
+6. Keep `tasks.md` and `handoff.md` current after substantial work.
+7. Use YAML front matter on retrievable Markdown artifacts.
+8. Run `python scripts/validate_repository.py` and `python scripts/build_manifest.py` before committing.
 
 Consultant workflow details are in [docs/consultant-howto.md](docs/consultant-howto.md).
 

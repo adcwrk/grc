@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -29,7 +30,9 @@ def build_manifest(root: Path) -> dict[str, Any]:
         metadata = artifact.metadata
         if not metadata.get("artifact_id"):
             continue
-        stat = path.stat()
+        modified_time = _git_modified_time(root, relative) or _filesystem_modified_time(
+            path
+        )
         artifacts.append(
             {
                 "artifact_id": metadata.get("artifact_id"),
@@ -43,9 +46,7 @@ def build_manifest(root: Path) -> dict[str, Any]:
                 "status": metadata.get("status"),
                 "sensitivity": metadata.get("sensitivity"),
                 "tags": metadata.get("tags", []),
-                "modified_time": datetime.fromtimestamp(
-                    stat.st_mtime, tz=UTC
-                ).isoformat(),
+                "modified_time": modified_time,
             }
         )
 
@@ -66,6 +67,22 @@ def write_manifest(root: Path, output: Path = MANIFEST_PATH) -> Path:
         encoding="utf-8",
     )
     return output_path
+
+
+def _git_modified_time(root: Path, relative: Path) -> str | None:
+    result = subprocess.run(
+        ["git", "log", "-1", "--format=%cI", "--", relative.as_posix()],
+        cwd=root,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    value = result.stdout.strip()
+    return value or None
+
+
+def _filesystem_modified_time(path: Path) -> str:
+    return datetime.fromtimestamp(path.stat().st_mtime, tz=UTC).isoformat()
 
 
 def main() -> int:
