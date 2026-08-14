@@ -1,0 +1,21 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Local or sensitive evidence staging
+local-evidence/
+private-evidence/
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*

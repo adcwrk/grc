@@ -1,0 +1,193 @@
+{
+  "artifact_count": 11,
+  "artifacts": [
+    {
+      "artifact_id": "CLIENT-{{CLIENT_ID}}-README",
+      "artifact_type": "client-readme",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.224834+00:00",
+      "owner": null,
+      "path": "clients/_template/README.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "client"
+      ]
+    },
+    {
+      "artifact_id": "ASM-{{CLIENT_ID}}-LOG",
+      "artifact_type": "context",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.225837+00:00",
+      "owner": null,
+      "path": "clients/_template/context/assumptions.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "active",
+      "tags": [
+        "assumptions"
+      ]
+    },
+    {
+      "artifact_id": "DEC-{{CLIENT_ID}}-LOG",
+      "artifact_type": "decision",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.225431+00:00",
+      "owner": null,
+      "path": "clients/_template/context/decisions.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "active",
+      "tags": [
+        "decisions"
+      ]
+    },
+    {
+      "artifact_id": "HANDOFF-{{CLIENT_ID}}",
+      "artifact_type": "handoff",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.226331+00:00",
+      "owner": null,
+      "path": "clients/_template/context/handoff.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "handoff"
+      ]
+    },
+    {
+      "artifact_id": "CTX-{{CLIENT_ID}}-PROJECT",
+      "artifact_type": "context",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.225135+00:00",
+      "owner": null,
+      "path": "clients/_template/context/project-context.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "project-context"
+      ]
+    },
+    {
+      "artifact_id": "TASK-{{CLIENT_ID}}-LOG",
+      "artifact_type": "task",
+      "client": "{{CLIENT_ID}}",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.226088+00:00",
+      "owner": null,
+      "path": "clients/_template/context/tasks.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "active",
+      "tags": [
+        "tasks"
+      ]
+    },
+    {
+      "artifact_id": "ASMNT-0001",
+      "artifact_type": "assessment",
+      "client": "example-client",
+      "control": [],
+      "framework": [
+        "Example Framework"
+      ],
+      "modified_time": "2026-08-14T03:33:37.227411+00:00",
+      "owner": null,
+      "path": "templates/assessment/assessment.md",
+      "requirement": [
+        "EX-1"
+      ],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "assessment"
+      ]
+    },
+    {
+      "artifact_id": "EVID-0001",
+      "artifact_type": "evidence",
+      "client": "example-client",
+      "control": [
+        "EX-CTRL-1"
+      ],
+      "framework": [
+        "Example Framework"
+      ],
+      "modified_time": "2026-08-14T03:33:37.226603+00:00",
+      "owner": "example-owner",
+      "path": "templates/evidence/evidence-record.md",
+      "requirement": [
+        "EX-1"
+      ],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "example"
+      ]
+    },
+    {
+      "artifact_id": "POL-0001",
+      "artifact_type": "policy",
+      "client": "example-client",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.226879+00:00",
+      "owner": null,
+      "path": "templates/policy/policy.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "policy"
+      ]
+    },
+    {
+      "artifact_id": "PROC-0001",
+      "artifact_type": "procedure",
+      "client": "example-client",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.227146+00:00",
+      "owner": null,
+      "path": "templates/procedure/procedure.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "procedure"
+      ]
+    },
+    {
+      "artifact_id": "RPT-0001",
+      "artifact_type": "report",
+      "client": "example-client",
+      "control": [],
+      "framework": [],
+      "modified_time": "2026-08-14T03:33:37.227719+00:00",
+      "owner": null,
+      "path": "templates/report/report.md",
+      "requirement": [],
+      "sensitivity": "INTERNAL",
+      "status": "draft",
+      "tags": [
+        "report"
+      ]
+    }
+  ],
+  "generated_at": "2026-08-14T03:38:34.666191+00:00",
+  "manifest_version": "1.0"
+}
