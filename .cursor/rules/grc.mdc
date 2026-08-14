@@ -1,0 +1,8 @@
+---
+description: GRC repository operating instructions
+alwaysApply: true
+---
+
+Follow `AGENTS.md`. It is the canonical repository-wide instruction file.
+
+Read repository context before changing files, preserve evidence provenance, and update handoff state after substantial work.
