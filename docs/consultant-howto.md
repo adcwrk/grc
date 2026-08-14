@@ -186,6 +186,8 @@ Use `templates/sow/statement-of-work.md` as the starting point for a new SOW. SO
 
 Treat SOW content as at least `CONFIDENTIAL` unless approved otherwise. Do not commit signed agreements, pricing, or sensitive contractual terms unless the repository is approved for that data.
 
+When using an AI agent for SOW drafting, have it read `agents/sow-writer.md` and `skills/sow-development/SKILL.md` before drafting. The agent should cite repository paths for scope-sensitive claims and list unresolved legal, commercial, pricing, staffing, or data-handling questions instead of inventing terms.
+
 ## Decisions And Assumptions
 
 Use `decisions.md` for material choices that affect project direction, architecture, scope, assessment interpretation, or deliverables.
