@@ -34,3 +34,7 @@ python scripts/build_manifest.py
 python scripts/validate_repository.py
 pytest
 ```
+
+## Consultant Workflow
+
+After setup, use [consultant-howto.md](consultant-howto.md) for the proper engagement workflow, including daily startup, AI agent use, evidence handling, handoff updates, validation, and Git hygiene.

@@ -34,6 +34,8 @@ python scripts/validate_repository.py
 pytest
 ```
 
+For engagement usage, read [docs/consultant-howto.md](docs/consultant-howto.md).
+
 Useful shortcuts:
 
 ```bash
@@ -53,6 +55,8 @@ make handoff CLIENT=acme
 5. Keep `tasks.md` and `handoff.md` current after substantial work.
 6. Use YAML front matter on retrievable Markdown artifacts.
 7. Run `python scripts/validate_repository.py` and `python scripts/build_manifest.py` before committing.
+
+Consultant workflow details are in [docs/consultant-howto.md](docs/consultant-howto.md).
 
 ## Agent Use
 
