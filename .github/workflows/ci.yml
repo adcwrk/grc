@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - feature/**
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Python lint
+        run: ruff check retrieval scripts tests
+      - name: JSON syntax
+        run: |
+          for file in schemas/*.json; do
+            python -m json.tool "$file" >/dev/null
+          done
+      - name: Repository validation
+        run: python scripts/validate_repository.py
+      - name: Tests
+        run: pytest
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "**/*.md"

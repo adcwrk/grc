@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/grc/schemas/client.schema.json",
+  "title": "Client",
+  "type": "object",
+  "required": ["client_id", "status", "sensitivity"],
+  "properties": {
+    "client_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,62}[a-z0-9]$"
+    },
+    "display_name": { "type": "string" },
+    "status": { "type": "string" },
+    "sensitivity": {
+      "type": "string",
+      "enum": ["PUBLIC", "INTERNAL", "CONFIDENTIAL", "CUI"]
+    }
+  },
+  "additionalProperties": true
+}
