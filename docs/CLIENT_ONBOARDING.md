@@ -2,6 +2,8 @@
 
 This guide explains how consultants and agentic CLIs should onboard clients into this repository.
 
+For a procedural consultant checklist, use [ONBOARDING_RUNBOOK.md](ONBOARDING_RUNBOOK.md).
+
 ## Quick Start
 
 Clone the repository and install development dependencies:

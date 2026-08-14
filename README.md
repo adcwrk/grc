@@ -36,6 +36,7 @@ pytest
 ```
 
 For engagement usage, read [docs/consultant-howto.md](docs/consultant-howto.md).
+For the client onboarding procedure, read [docs/ONBOARDING_RUNBOOK.md](docs/ONBOARDING_RUNBOOK.md).
 
 Useful shortcuts:
 

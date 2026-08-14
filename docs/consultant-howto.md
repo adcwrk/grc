@@ -2,6 +2,8 @@
 
 This guide explains how to use the repository correctly during a real GRC engagement. The goal is to make project state portable across computers, consultants, and AI agents without relying on chat history.
 
+For the exact client onboarding procedure, use [ONBOARDING_RUNBOOK.md](ONBOARDING_RUNBOOK.md).
+
 ## Core Rule
 
 The repository is the engagement memory. If a fact, decision, assumption, task, evidence record, or assessment note matters, put it in Git.
