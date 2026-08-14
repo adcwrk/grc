@@ -1,0 +1,7 @@
+client:
+  name: test-client-1
+  slug: test-client-1
+  status: active
+classification: INTERNAL
+created:
+  date: '2026-08-13'

@@ -1,0 +1,78 @@
+engagement:
+  name: NIST CSF 2.0 vCISO Advisory Engagement
+  type: advisory
+  status: onboarding
+consultant: null
+frameworks:
+- nist-csf-2.0
+classification: INTERNAL
+created:
+  date: '2026-08-13'
+stakeholders:
+- Maria Chen — CFO, executive sponsor (SRC-0003)
+- Evan Brooks — Director of IT (SRC-0003)
+- Priya Nair — Infrastructure Manager (SRC-0003)
+- Carlos Medina — Service Desk Lead (SRC-0003)
+- Renee Walker — HR Director (SRC-0003)
+objectives:
+- Establish cybersecurity governance cadence, risk register ownership, and security roadmap
+- Baseline the corporate IT cybersecurity program against NIST CSF 2.0
+- Validate identity, endpoint, backup, vulnerability, incident response, and third-party
+  risk practices
+- Produce a prioritized roadmap with owners, target dates, and budget ranges
+- Improve executive cyber risk reporting without unnecessary administrative burden
+scope:
+- IT governance, policy structure, and security program management
+- Identity and access management for workforce users (Microsoft Entra ID)
+- Microsoft 365 tenant and IT-managed SaaS administration
+- Corporate endpoint fleet across four sites
+- Site LAN, WAN, wireless, firewalls, VPN, DNS, DHCP, and network monitoring
+- On-premises server infrastructure at headquarters
+- Backup administration, vulnerability management, and incident response readiness
+- Third-party risk for critical IT and SaaS vendors
+- Security awareness training, IT asset management, and IT service desk processes
+out_of_scope:
+- Operational technology, ICS, PLCs, HMIs, SCADA, CNC controllers, plant-floor automation
+- Safety systems, quality instrumentation networks, machine telemetry platforms
+- Physical security systems except where dependent on corporate identity or network services
+- Formal certification, attestation, or regulatory audit conclusions
+- Penetration testing and technical security testing
+- Remediation implementation and engineering labor
+deliverables:
+- D-1 Kickoff summary and open question log
+- D-2 Current-state NIST CSF 2.0 profile for the IT environment
+- D-3 Executive risk register
+- D-4 Prioritized security roadmap covering the next two quarters
+- D-5 Security governance calendar and recurring vCISO agenda
+- D-6 Draft IT ransomware incident response tabletop scenario
+important_dates: []
+known_systems:
+- Microsoft Entra ID
+- Microsoft 365
+- Microsoft Intune
+- CrowdStrike Falcon
+- Fortinet firewalls (all sites)
+- Cisco switching and wireless (all sites)
+- Managed SD-WAN
+- VMware cluster (headquarters)
+- Veeam backup
+- NetSuite ERP
+- Salesforce CRM
+- ServiceNow ITSM
+- KnowBe4
+business_units:
+- Site 1 — Grand Rapids, Michigan — headquarters, finance, HR, engineering leadership
+- Site 2 — Dayton, Ohio — main manufacturing plant
+- Site 3 — Fort Wayne, Indiana — secondary manufacturing plant
+- Site 4 — Louisville, Kentucky — distribution and customer service
+data_handling: >-
+  Client source documents may be committed to this Git repository. Approved by the
+  consultant on 2026-08-13 on the basis that engagement material is INTERNAL, not CUI
+  and not regulated. See DEC-0001 in context/decisions.md. Revisit before ingesting any
+  CUI, PII, or client-confidential material.
+provenance: >-
+  stakeholders, objectives, scope, out_of_scope, deliverables, known_systems, and
+  business_units are derived from cataloged intake sources SRC-0001, SRC-0002, and
+  SRC-0003, which are synthetic AI-generated test material and explicitly not evidence.
+  See ASM-0003 in context/assumptions.md. important_dates remains empty because no dates
+  appear in any source.

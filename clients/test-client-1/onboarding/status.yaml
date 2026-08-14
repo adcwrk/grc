@@ -1,0 +1,8 @@
+onboarding:
+  status: incomplete
+  updated_at: '2026-08-14T05:21:02.222499+00:00'
+  workspace_initialized: true
+  created_workspace_this_run: false
+  sources_cataloged_this_run: 3
+  sources_skipped_this_run: 0
+  open_question_count: 8
